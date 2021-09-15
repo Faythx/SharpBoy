@@ -1,10 +1,4 @@
 
-.vs/SharpBoy/DesignTimeBuild/.dtbcache
-.vs/SharpBoy/v16/.suo
-.vs/SharpBoy/v16/Server/sqlite3/db.lock
-.vs/SharpBoy/v16/Server/sqlite3/storage.ide
-.vs/SharpBoy/v16/Server/sqlite3/storage.ide-shm
-.vs/SharpBoy/v16/Server/sqlite3/storage.ide-wal
-.vs/slnx.sqlite
-.vs/tasks.vs.json
-.vs/VSWorkspaceState.json
+.vs/
+SharpBoyCore/obj/
+SharpBoyCore/bin/
