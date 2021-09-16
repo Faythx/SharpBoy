@@ -18,5 +18,13 @@ namespace SharpBoyCore.Memory
 
 
 		}
+
+		public byte Read8(ushort address)
+		{
+
+			return 0x00;
+			//ROM Read
+			//return cartridge.ROM[PC++];
+		}
 	}
 }

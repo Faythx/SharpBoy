@@ -21,18 +21,12 @@ namespace SharpBoyCore
             
             PrintRegisters(Reg);
 
-            //Console.WriteLine($"A {Reg.GetType().GetProperties()}");
+            //sbyte test = Convert.ToSByte(0x35);
+            sbyte test = unchecked((sbyte)Reg.L);
 
-            //System.Reflection.PropertyInfo[] myPropertyInfo;
-            System.Reflection.FieldInfo[] myPropertyInfo;
-            // Get the properties of 'Type' class object.
-            myPropertyInfo = Reg.GetType().GetFields();
-            Console.WriteLine("Properties of Reg are:");
-            for (int i = 0; i < myPropertyInfo.Length; i++)
-            {
-                Console.WriteLine(myPropertyInfo[i].ToString());
-            }
-            Console.WriteLine($"A {Reg.GetType().GetField("A").GetValue(Reg)}");
+            Console.WriteLine($"A {test}");
+
+
 
         }
         

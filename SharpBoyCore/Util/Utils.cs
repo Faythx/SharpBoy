@@ -46,5 +46,10 @@ namespace SharpBoyCore.Util
 		{
 			return ((r & (1 << n)) != 0);
 		}
+
+		public static sbyte byteToSbyte(byte n)
+		{
+			return unchecked((sbyte)n);
+		}
 	}
 }
