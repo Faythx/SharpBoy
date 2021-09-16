@@ -328,16 +328,16 @@ namespace SharpBoyCore.Processor
             {
                 case 0x00:
                     //NZ
-                    return regs.flagZ != false;
+                    return !regs.flagZ;
                 case 0x01:
                     //Z
-                    return regs.flagZ == false;
+                    return regs.flagZ;
                 case 0x02:
                     //NC
-                    return regs.flagZ != false;
+                    return !regs.flagC;
                 case 0x03:
                     //C
-                    return regs.flagZ == false;
+                    return regs.flagC;
                 default:
                     InvalidOpcode(n);
                     return false;
